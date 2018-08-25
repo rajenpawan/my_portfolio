@@ -53,12 +53,11 @@
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      width: 200px;
+      width: 190px;
       height: 200px;
       background: url("../img/portrait.jpg");
       border-radius: 50%;
       border: solid 3px #eece1a;
-      background-size: 100%;
       background-repeat: no-repeat;
       opacity: 1; }
   .menu .nav-item {
@@ -93,6 +92,38 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.8s; }
 
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../img/portrait_sm.jpg");
+      width: 135px;
+      height: 140px;
+      background-repeat: no-repeat; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }
+
 * {
   box-sizing: border-box; }
 
@@ -101,14 +132,14 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Seogoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Seogoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background1.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       right: 0;
