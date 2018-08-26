@@ -1,0 +1,1 @@
+npm run deploy (after git commit & push)
