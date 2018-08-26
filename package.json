@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://rajenpawan.github.io/my_portfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
+    "gh-pages": "^1.2.0",
     "live-server": "^1.2.0",
     "node-sass": "^4.9.3"
   }
